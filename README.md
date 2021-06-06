@@ -7,7 +7,9 @@ Implementation of 3D version of Monket-Net. Motion transfer based on 3D optical 
 # Train command
 python run.py --is_original --is_3d --config config/vox_3d_original64.yaml --mode train 
 
-# Test command
+# Test command (reconstruction)
 python run.py --is_original --is_3d --config config/vox_3d_original64.yaml --mode reconstruction
+# Test command (image-to-video-translation)
 python run.py --is_original --is_3d --config config/vox_3d_original64.yaml --mode transfer
+# Test command (calculating average keypoint distance)
 python calculate_akd.py
